@@ -4,25 +4,26 @@
     <head>
         <title>Registration page</title>
 
-        <script type="text/javascript">
-            function validationEmail(emailId)
-            {
-                var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+<%--        <script type="text/javascript">--%>
+<%--            function validationEmail(emailId)--%>
+<%--            {--%>
+<%--                var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;--%>
 
-                if (emailId.value.match(pattern))
-                {
-                    document.getElementById('password').focus();
-                    return true;
-                }
-                else
-                {
-                    alert("You have entered an invalid email address!")
-                    document.getElementById('emailId').focus();
-                    return false;
-                }
+<%--                if (emailId.value.match(pattern))--%>
+<%--                {--%>
+<%--                    document.getElementById('userName').focus();--%>
+<%--                    document.getElementById('password').focus();--%>
+<%--                    return true;--%>
+<%--                }--%>
+<%--                else--%>
+<%--                {--%>
+<%--                    alert("You have entered an invalid email address!")--%>
+<%--                    document.getElementById('emailId').focus();--%>
+<%--                    return false;--%>
+<%--                }--%>
 
-            }
-        </script>
+<%--            }--%>
+<%--        </script>--%>
     </head>
 
     <body>
@@ -42,6 +43,7 @@
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" placeholder="Enter your password" required>
                     </fieldset>
+                    <button type="submit">submit</button>
                 </form>
             </div>
         </div>
